@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — CredNet</title>
+  <meta name="description" content="Contact CredNet for healthcare credentialing, enrollment, and consulting services. Call 321-287-5498 or email jbarrett@cred-net.org." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ──────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logos/CredNet_noTM.png" alt="CredNet" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="who-we-are.html">Who We Are</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Page Hero ────────────────────────────────── -->
+  <div class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Ready to simplify your healthcare operations? We'd love to hear from you.</p>
+    </div>
+  </div>
+
+  <!-- ── Contact Section ──────────────────────────── -->
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div>
+          <h2 style="margin-bottom:0.5rem;">Get In Touch</h2>
+          <div class="accent-line" style="margin:0.6rem 0 1.75rem;"></div>
+          <p>Whether you have a question about our services, want to discuss a specific challenge your organization is facing, or are ready to get started — reach out and we will respond promptly.</p>
+
+          <div style="margin-top:2rem;">
+            <div class="contact-info-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:3212875498">321-287-5498</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:jbarrett@cred-net.org">jbarrett@cred-net.org</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Location</h4>
+                <p>Orlando, FL 32803<br />United States</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">🌐</div>
+              <div>
+                <h4>Website</h4>
+                <p><a href="https://www.cred-net.org">www.cred-net.org</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid #E2E8F0;">
+            <p style="font-size:0.875rem;font-weight:600;color:#2D3748;margin-bottom:1rem;">Follow CredNet</p>
+            <div class="social-links" style="justify-content:flex-start;">
+              <a href="https://www.facebook.com" aria-label="Facebook" style="background:#E8F4F8;color:#1B4F8A;">f</a>
+              <a href="https://www.twitter.com" aria-label="X / Twitter" style="background:#E8F4F8;color:#1B4F8A;">𝕏</a>
+              <a href="https://www.instagram.com" aria-label="Instagram" style="background:#E8F4F8;color:#1B4F8A;">in</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="card" style="padding:2.5rem;">
+          <h3 style="margin-bottom:0.4rem;">Send Us a Message</h3>
+          <p style="font-size:0.9rem;color:#718096;margin-bottom:2rem;">Fill out the form below and we will get back to you as soon as possible.</p>
+
+          <!--
+            To activate this form with Formspree:
+            1. Sign up free at https://formspree.io
+            2. Create a new form and copy your form ID
+            3. Replace YOUR_FORM_ID below with your actual ID
+            e.g. action="https://formspree.io/f/abcd1234"
+          -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" placeholder="Jane" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Smith" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@yourorganization.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number <span style="font-weight:400;color:#718096;">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="(321) 000-0000" />
+            </div>
+
+            <div class="form-group">
+              <label for="organization">Organization</label>
+              <input type="text" id="organization" name="organization" placeholder="Your healthcare organization" />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Area of Interest</label>
+              <select id="service" name="service">
+                <option value="" disabled selected>Select a service area...</option>
+                <option value="network">Network Enhancement</option>
+                <option value="credentialing">Credentialing</option>
+                <option value="enrollment">Provider Enrollment</option>
+                <option value="revenue">Revenue Enhancement</option>
+                <option value="web">Web Presence &amp; Branding</option>
+                <option value="marketing">Marketing &amp; Advertising</option>
+                <option value="bizdev">Business Development</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your organization and the challenges you're facing..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ───────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logos/CredNet_noTM.png" alt="CredNet" />
+          <p>CredNet, LLC provides concierge-level credentialing, enrollment, and healthcare consulting services to medical groups, health systems, and commercial payers across the United States.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="who-we-are.html">Who We Are</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li>📍 Orlando, FL 32803</li>
+            <li>📞 <a href="tel:3212875498" style="color:rgba(255,255,255,0.65);">321-287-5498</a></li>
+            <li>✉️ <a href="mailto:jbarrett@cred-net.org" style="color:rgba(255,255,255,0.65);">jbarrett@cred-net.org</a></li>
+            <li>🌐 <a href="https://www.cred-net.org" style="color:rgba(255,255,255,0.65);">cred-net.org</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CredNet, LLC. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com" aria-label="Facebook">f</a>
+          <a href="https://www.twitter.com" aria-label="X / Twitter">𝕏</a>
+          <a href="https://www.instagram.com" aria-label="Instagram">in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
