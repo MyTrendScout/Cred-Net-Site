@@ -459,6 +459,53 @@ section { padding: 5.5rem 0; }
 .form-group textarea { min-height: 145px; resize: vertical; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 
+/* ── Ironman Band ─────────────────────────────────── */
+.ironman-band {
+  background: linear-gradient(135deg, #0D2A5C 0%, #1B4F8A 60%, #00727A 100%);
+  padding: 4.5rem 0;
+}
+
+.ironman-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ironman-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.ironman-stat {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.ironman-stat span {
+  display: block;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #00A2AC;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.ironman-stat small {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.65);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 768px) {
+  .ironman-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+
 /* ── CTA Band ─────────────────────────────────────── */
 .cta-band {
   background: linear-gradient(135deg, #00A2AC 0%, #007A84 100%);
