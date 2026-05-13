@@ -77,7 +77,7 @@ section { padding: 5.5rem 0; }
   padding: 0.875rem 1.75rem;
 }
 
-.nav-logo img { height: 44px; width: auto; }
+.nav-logo img { height: 52px; width: auto; }
 
 .nav-links {
   display: flex;
@@ -159,7 +159,7 @@ section { padding: 5.5rem 0; }
 
 /* ── Hero ─────────────────────────────────────────── */
 .hero {
-  background: linear-gradient(140deg, #1B4F8A 0%, #0D2A5C 55%, #00727A 100%);
+  background: url('../assets/images/doctor-10.jpg') center/cover no-repeat;
   color: #fff;
   padding: 7rem 0 6rem;
   text-align: center;
@@ -171,8 +171,19 @@ section { padding: 5.5rem 0; }
   content: '';
   position: absolute;
   inset: 0;
-  background: url('../assets/images/Doctors_1898951_XS.jpg') center/cover no-repeat;
-  opacity: 0.08;
+  background: linear-gradient(135deg, rgba(13,42,92,0.65) 0%, rgba(27,79,138,0.58) 50%, rgba(0,80,88,0.55) 100%);
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  border: 2px solid rgba(0,162,172,0.35);
+  background: radial-gradient(circle, rgba(0,162,172,0.12) 0%, transparent 70%);
 }
 
 .hero-content { position: relative; max-width: 780px; margin: 0 auto; }
@@ -226,6 +237,35 @@ section { padding: 5.5rem 0; }
 /* ── Grids ────────────────────────────────────────── */
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.75rem; }
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+
+/* ── Card Accent ──────────────────────────────────── */
+.card-accent {
+  border-top: 3px solid #00A2AC;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #00A2AC;
+}
+.card-link:hover { color: #008d97; }
+
+/* ── About Photo ──────────────────────────────────── */
+.about-photo-wrap {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.14);
+  border: 6px solid #1B4F8A;
+}
+.about-photo-wrap img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
 
 /* ── Service Icon ─────────────────────────────────── */
 .service-icon {
@@ -443,7 +483,7 @@ section { padding: 5.5rem 0; }
   margin-bottom: 3rem;
 }
 
-.footer-brand img { height: 38px; width: auto; margin-bottom: 1rem; filter: brightness(0) invert(1); }
+.footer-brand img { height: 44px; width: auto; margin-bottom: 1.25rem; background: #fff; padding: 6px 12px; border-radius: 8px; display: block; }
 .footer-brand p { font-size: 0.875rem; line-height: 1.7; max-width: 300px; }
 
 .footer h4 {
